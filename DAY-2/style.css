@@ -1,0 +1,24 @@
+body {
+  background: #121212;
+  color: white;
+}
+
+h1 {
+  color: rgba(231, 42, 17, 0.966);
+}
+span {
+  color: red;
+}
+h4 {
+  color: blueviolet;
+}
+table,
+th,
+td {
+  border: 1px solid white;
+  border-collapse: collapse;
+  padding: 5px;
+}
+th {
+  color: coral;
+}
