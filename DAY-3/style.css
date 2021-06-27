@@ -1,0 +1,42 @@
+body{
+    border: 9px solid purple;
+    margin:20px;
+    padding:20px;
+}
+.head{
+    display: flex;
+    justify-content: center;
+    border:olivedrab;
+}
+img{
+    width: 100px;
+    margin-right: 15px;
+ }
+h1 {
+  color: rgb(54, 0, 124);
+  padding-top: 19px;
+  font-size:2.5em;
+  border:peru;
+
+}
+.total {
+  display: flex;
+  font-size: 1.1rem;
+  margin:20px;
+  
+}
+div.left {
+  width: 50vw;
+  height: 100vh;
+  padding-right: 10%;
+  padding-left: 5%;
+  border-right: 5px red solid;
+  box-sizing: border-box;
+}
+div.right {
+  width: 50vw;
+  padding-right: 10%;
+  padding-left: 5%;
+  box-sizing: border-box;
+  
+}
