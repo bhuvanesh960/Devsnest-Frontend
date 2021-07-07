@@ -1,0 +1,30 @@
+h1 {
+  color: rgb(255, 0, 85);
+}
+.grid {
+  width: 70vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+#question {
+  color: rgb(6, 105, 89);
+  font-size: x-large;
+}
+button {
+  display: block;
+  background: rgb(245, 211, 119);
+  color: black;
+  width: 10rem;
+  outline: none;
+  margin: 1rem 0;
+  padding: 0.5rem;
+  text-align: center;
+}
+#progress {
+  color: rgb(148, 43, 148);
+}
