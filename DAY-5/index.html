@@ -1,49 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/main.css">
-  <title>Calculator</title>
-</head>
-<body>
-  <h1>CALCULATOR</h1>
-  <div class="main">
-  <div id="displayarea">
-  5
-  </div>
-  <div class="below">
-  <div id="firstrow" class="line" >
-    <button class="c">c</button>
-    <button class="ce">ce</button>
-    <button>%</button>
-    <button>÷</button>
-  </div>
-  <div id="secondrow" class="line">
-    <button>7</button>
-    <button>8</button>
-    <button>9</button>
-    <button>*</button>
-  </div>
-  <div id="thirdrow" class="line">
-    <button>4</button>
-    <button>5</button>
-    <button>6</button>
-    <button>-</button>
-  </div>
-  <div id="fourthrow" class="line">
-    <button>3</button>
-    <button>2</button>
-    <button>1</button>
-    <button>+</button>
-  </div>
-  <div id="fifthrow" class="last">
-    <button class="zero">0</button>
-    <button class="zero">.</button>
-    <button class="equal">=</button>
-  </div>
-</div>
-</div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="output">
+        <div data-previous class="previous"></div>
+        <div data-current class="current">5555555555555555555</div>
+      </div>
+      <button data-clear class="sizetwo">AC</button>
+      <button data-delete>DEL</button>
+      <button data-operator>÷</button>
+      <button data-number>1</button>
+      <button data-number>2</button>
+      <button data-number>3</button>
+      <button data-operator>*</button>
+      <button data-number>4</button>
+      <button data-number>5</button>
+      <button data-number>6</button>
+      <button data-operator>+</button>
+      <button data-number>7</button>
+      <button data-number>8</button>
+      <button data-number>9</button>
+      <button data-operator>-</button>
+      <button data-number>.</button>
+      <button data-number>0</button>
+      <button data-equals class="sizetwo">=</button>
+    </div>
+    <script src="./script.js"></script>
+  </body>
 </html>
