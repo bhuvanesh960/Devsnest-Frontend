@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>THA-14</title>
+  </head>
+  <body onresize="resized()">
+    <input type="text" name="first" id="firstname" />
+    <button onclick="clickMe()">click Me</button>
+    <div>
+      <p onmouseover="mouseOverEvent()" onmouseout="mouseOutEvent()">
+        Hello ur hovering
+      </p>
+      <input id="myid" placeholder="Key Up" onkeyup="keyUp(),keyDown()" />
+      <input id="myid1" placeholder="Key Up" onkeyup="keyDown()" />
+    </div>
+    <div>
+      <input id="myid2" type="text" onfocus="iamfoussed()" />
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
