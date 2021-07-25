@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { useState } from "react";
+import AddingItemForm from "./addingitem";
+import Editing from "./modify";
 
-function App() {
+export default function App() {
+  const [data, setData] = useState([]);
+
+  const updateItem = (index, newItem) => {
+    setData(
+      data.map((item, i) => (i === index ? { ...item, ...newItem } : item))
+    );
+  };
+
+  const addItem = item => {
+    setData([...data, item]);
+  };
+  const removeItem = index => {
+    setData(data.filter((item, i) => i !== index));
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <div className='container'>
+        <AddingItemForm addItem={addItem} />
+        {data.length === 0 ? (
+          <h3>Add few </h3>
+        ) : (
+          data.map((item, index) => (
+            <Editing
+              item={item}
+              key={index}
+              index={index}
+              updateItem={updateItem}
+              removeItem={removeItem}
+            />
+          )))}
+      </div>
     </div>
   );
 }
-
-export default App;
